@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<app-header></app-header>
+
+<div class="card">
+    <div class="card-body">
+    
+      <table class="table table-bordered">
+        <thead>
+          <tr class="driverlist">
+            <th scope="col">Sl.No</th>
+            <th scope="col">Name</th>
+            <th scope="col">Phone No</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let electronic of electronics; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ electronic.productName }}</td>
+            <td>{{ electronic.productType }}</td>
+            <td>{{ electronic.picture }}</td>
+         </tr>   
+        </tbody>
+      </table>
+    </div>
+</div>

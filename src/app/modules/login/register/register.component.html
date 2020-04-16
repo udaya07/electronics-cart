@@ -1,0 +1,149 @@
+<div class="card">
+<div class="card-body">
+    <h1 class="card-title">Sign up</h1>
+    <form
+      class="form-horizontal"
+      (ngSubmit)="onSubmit()"
+      [formGroup]="user"
+    >
+    <button
+   
+    class="btn"
+  routerLink="/login"
+  >
+    Login
+  </button>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="name">UserName</label>
+        <div class="col-sm-9">
+          <input
+            type="text"
+            class="form-control"
+            id="Name"
+            formControlName="UserName"
+          />
+          <div
+            *ngIf="
+              user.controls['UserName'].hasError('minlength') &&
+              (user.controls['UserName'].dirty ||
+                user.controls['UserName'].touched)
+            "
+            class="alert alert-danger"
+          >
+            Please Enter the UserName(of atleast 4 characters)
+          </div>
+
+          <div
+            *ngIf="user.controls['UserName'].hasError('maxlength')"
+            class="alert alert-danger"
+          >
+            UserName cannot exceed 10 characters
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="mobilenumber"
+          >MobileNumber</label
+        >
+        <div class="col-sm-9">
+          <input
+            onkeypress="return /[0-9]/i.test(event.key)"
+            type="text"
+            class="form-control"
+            id="text"
+            formControlName="MobileNumber"
+          />
+          <div
+            *ngIf="
+              user.controls['MobileNumber'].hasError('minlength') &&
+              (user.controls['MobileNumber'].dirty ||
+                user.controls['MobileNumber'].touched)
+            "
+            class="alert alert-danger"
+          >
+            Please Enter the Phone Number(of atleast 10 digits)
+          </div>
+          <div
+            *ngIf="user.controls['MobileNumber'].hasError('maxlength')"
+            class="alert alert-danger"
+          >
+            Phone Number Cannot exceed 15 Numbers
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">EmailId</label>
+        <div class="col-sm-9">
+          <input
+            onkeypress="return /[a-z ]/i.test(event.key)"
+            type="text"
+            class="form-control"
+            id="EmailId"
+            formControlName="EmailId"
+          />
+          <div
+            *ngIf="
+              user.controls['EmailId'].hasError('minlength') &&
+              (user.controls['EmailId'].dirty ||
+                user.controls['EmailId'].touched)
+            "
+            class="alert alert-danger"
+          >
+            please enter an email id (atleast 4 characters)
+          </div>
+
+          <div
+            *ngIf="user.controls['EmailId'].hasError('maxlength')"
+            class="alert alert-danger"
+          >
+            
+          </div>
+        </div>
+      </div>
+     
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Password</label>
+        <div class="col-sm-9">
+          <input
+            type="password"
+            class="form-control"
+            id="pwd"
+            formControlName="Password"
+          />
+          <div
+            *ngIf="
+              user.controls['Password'].hasError('minlength') &&
+              (user.controls['Password'].dirty ||
+                user.controls['Password'].touched)
+            "
+            class="alert alert-danger"
+          >
+            Please Enter a password(of atleast 4 characters)
+          </div>
+          <div
+            *ngIf="user.controls['Password'].hasError('maxlength')"
+            class="alert alert-danger"
+          >
+            Password cannot exceed 10 characters
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10"></div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button
+            type="submit"
+            class="btn"
+            [disabled]="!user.valid"
+            (click)="onSubmit()"
+          >
+            Signup
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
