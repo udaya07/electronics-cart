@@ -1,3 +1,73 @@
-<app-navbar></app-navbar>
+ <app-navbar></app-navbar>
 <app-header></app-header>
 
+<!--
+<div class="heading">My Cart</div>
+
+
+ <div class="container"  >
+  <div class="row" >
+  
+    <div class=" col-sm-6 col-md-3 " *ngFor ="let cart of carts">
+      <div class="card" >
+        <p style="text-align: center;">{{cart.productType}}</p>
+        <img class="card-img" src="{{cart.picture}}" alt="Vans">
+      
+        <div class="card-block">
+      <span><h5 class="card-title" style="text-align: center;">{{cart.productName}}</h5> </span> 
+      <h6 style="color: grey;text-align: center;">{{cart.specification}}</h6>   
+          <p class="card-text">
+        
+          <div class="buy d-flex justify-content-between align-items-center">
+            <div class="price text-success"><h5 class="mt-4">₹{{cart.price}}</h5></div>
+             <button class="btn btn-primary mt-3" (click)= "onBuyNow(cart.productId)" > Buy Now</button>
+            
+
+          </div>
+          <button class="btn btn-danger mt-3" (click)= "onDelete(cart.productId)"> Delete</button>
+        </div>
+      </div>
+      
+      <br>
+      <br>
+    </div>
+  </div> 
+</div> 
+
+ -->
+ <h3 style="margin-top: 60px;margin-left: 560px;">My Cart</h3>
+ <div class="container">
+  <div class="card shopping-cart">
+          
+           <div class="card-body"  *ngFor ="let cart of carts">
+                   <!-- PRODUCT -->
+                   <div class="row">
+                       <div class="col-12 col-sm-12 col-md-2 text-center">
+                               <img class="img-responsive" src="{{cart.picture}}" alt="prewiew" width="120" height="80">
+                       </div>
+                       <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-5">
+                           <h5 class="product-name"><strong>{{cart.productName}}({{cart.productType}})</strong></h5>
+                           <h5 class="product-name" style="color: rgb(40,53,145);">HighLights:{{cart.specification}}</h5>
+
+                           <h6>
+                               <small style="color: rgb(137,137,139);">{{cart.description}}</small>
+                           </h6>
+                       </div>
+                      <div>
+                        <span style="position: absolute;left: 700px;top: 10px;"><h4>TotalPrice</h4></span>
+                        <span style="color: rgb(40,167,69);position: relative;top: 58px;left: 15px;"><h6>{{cart.quantity}} x Rs.{{cart.price}} = Rs.{{cart.totalPrice}}</h6></span>
+                      </div>  
+                      <div class="delete">
+                      <button class="btn btn-danger mt-3 " (click)= "onDelete(cart.productId)"> Remove</button>
+                      </div>
+                      <button class="btn btn-primary mt-3" (click)= "onBuyNow(cart.productId)" > Buy Now</button>
+ 
+                   </div>
+                   <hr>
+                   <!-- END PRODUCT -->
+                  
+              
+           </div>
+          
+       </div>
+</div>

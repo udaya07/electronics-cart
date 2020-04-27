@@ -1,3 +1,43 @@
 <app-navbar></app-navbar>
 
 <app-header></app-header>
+
+
+<h3 style="margin-top: 60px;margin-left: 560px;">Your Orders</h3>
+ <div class="container">
+  <div class="card shopping-cart">
+          
+           <div class="card-body"  *ngFor ="let yourOrder of yourOrders">
+                   <!-- PRODUCT -->
+                   <div class="row">
+                       <div class="col-12 col-sm-12 col-md-2 text-center">
+                               <img class="img-responsive" src="{{yourOrder.picture}}" alt="prewiew" width="120" height="80">
+                       </div>
+                       <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-5">
+                           <h5 class="product-name"><strong>{{yourOrder.productName}}({{yourOrder.productType}})</strong></h5>
+                           <h5 class="product-name" style="color: rgb(40,53,145);">HighLights:{{yourOrder.specification}}</h5>
+
+                           <h6>
+                               <small style="color: rgb(137,137,139);">{{yourOrder.description}}</small>
+                           </h6>
+                           <h6>{{yourOrder.orderDate}}</h6>
+                       </div>
+                      <div>
+                        <span style="position: absolute;left: 700px;top: 10px;"><h4>TotalPrice</h4></span>
+                        <span style="color: rgb(40,167,69);position: relative;top: 58px;left: 15px;"><h6>{{yourOrder.quantity}} x Rs.{{yourOrder.price}} = Rs.{{yourOrder.totalPrice}}</h6></span>
+                      </div>  
+                    <div>
+                        <span  style="position: absolute;left: 920px;top: 10px;"><h4>OrderStatus</h4></span>
+                        <span style="color: rgb(63,74,178);position: relative;top: 58px;left: 95px;"><h4>{{yourOrder.statusName}}</h4></span>
+
+                    </div>
+ 
+                   </div>
+                   <hr>
+                   <!-- END PRODUCT -->
+                  
+              
+           </div>
+          
+       </div>
+</div>

@@ -1,7 +1,7 @@
 .button {
     position: absolute;
     top: 130px;
-    left: -18vw;
+    left: 18vw;
     height: 115px;
     width: 126px;
     border-radius: 9px;
@@ -13,15 +13,15 @@
   }
   
   .card {
-    background-color: #e8e8e8;
-    width: 675px;
+    background-color: rgb(63,95,156);
+    width: 703px;
     overflow-y: auto;
     overflow-x: hidden;
-    height: 504px;
+    height: 350px;
     position: relative;
-    margin-top: 8%;
-    margin-left: 20%;
-    background-color: white;
+    margin-top: 5%;
+    margin-left: 12%;
+   color: white;
     border-radius: 10px;
     left: 30vh;
   }
@@ -31,14 +31,25 @@
     font-weight: bold;
   }
   .btn {
-    background-color: rgb(98, 217, 153);
+    background-color: rgb(89,170,88);
     width: 100px;
     font-size: 20px;
-    margin-left: 489px;
+    margin-left: 235px;
   }
+  .bttn {
+    background-color: #59aa58;
+    width: 100px;
+    font-size: 20px;
+    margin-left: 80%;
+    position: absolute;
+    left: 30px;
+    top: 10px
+  }
+
   
   .form-group [type='text'] {
     background: transparent;
+    color: white;
     border: none;
     border-bottom: 1px solid #000000;
     padding: 2px 5px;
@@ -47,6 +58,7 @@
   }
   .form-group [type='password'] {
     background: transparent;
+    color: white;
     border: none;
     border-bottom: 1px solid #000000;
     padding: 2px 5px;
@@ -54,53 +66,12 @@
     border-bottom-right-radius: 0;
   }
   
-  .form-control {
-    width: 124%;
-  }
+  // .form-control {
+  //   width: 124%;
+  // }
   
-  .modal-body1 {
-    background-color: #79cc9a;
-    color: white;
-    width: 157%;
-    padding-bottom: 26%;
-    padding-right: 12%;
-    font-weight: bold;
-    font-size: 12pt;
-    text-align: center;
-    height: 4vh;
-    display: table-cell;
-    vertical-align: center;
-    border-radius: 5px;
-  }
-  .modal-body2 {
-    background-color: #e77979;
-    color: white;
-    width: 157%;
-    padding-bottom: 26%;
-    padding-right: 12%;
-    font-weight: bold;
-    font-size: 12pt;
-    text-align: center;
-    height: 4vh;
-    display: table-cell;
-    vertical-align: center;
-    border-radius: 5px;
-  }
-  .modal-body2 {
-    background-color: rgb(212, 32, 32);
   
-    width: 157%;
-    padding-bottom: 26%;
-    padding-right: 12%;
-    font-weight: bold;
-    font-size: 12pt;
-    text-align: center;
-    height: 4vh;
-    display: table-cell;
-    vertical-align: center;
-    border-radius: 5px;
-  }
-  //-
+ 
   .ok {
     background-color: white;
     border-radius: 4px;

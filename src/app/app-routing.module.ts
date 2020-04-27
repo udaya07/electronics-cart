@@ -11,12 +11,14 @@ import { ElectronicsComponent } from './modules/user/electronics/electronics.com
 import { FurnituresComponent } from './modules/user/furnitures/furnitures.component';
 import { LoginComponent } from './modules/login/login/login.component';
 import { RegisterComponent } from './modules/login/register/register.component';
+import { DeliveryDetailsComponent } from './modules/user/delivery-details/delivery-details.component';
+import { ViewDeliveryDetailsComponent } from './modules/user/view-delivery-details/view-delivery-details.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'user/dashboard',
+    component:LoginComponent,
     pathMatch: 'full'
   },
   {
@@ -63,6 +65,24 @@ const routes: Routes = [
     path: 'register',
     component: RegisterComponent,
   },
+  {
+    path: 'user/deliveryDetails',
+    component:DeliveryDetailsComponent
+
+  },
+  {
+    path: 'user/deliveryDetails/:id',
+    component:DeliveryDetailsComponent
+
+  },
+
+  {
+    path: 'user/viewDeliveryDetails',
+    component:ViewDeliveryDetailsComponent
+
+  },
+  
+
 
 ];
 
@@ -73,4 +93,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 // tslint:disable-next-line: max-line-length
-export const routingComponents = [YourOrdersComponent, DashboardComponent, NavbarComponent, WishlistComponent, HeaderComponent, CartComponent, AboutComponent, ElectronicsComponent, FurnituresComponent, LoginComponent, RegisterComponent];
+export const routingComponents = [YourOrdersComponent, DashboardComponent, NavbarComponent, WishlistComponent, HeaderComponent, CartComponent, AboutComponent, ElectronicsComponent, FurnituresComponent, LoginComponent, RegisterComponent,DeliveryDetailsComponent,ViewDeliveryDetailsComponent];

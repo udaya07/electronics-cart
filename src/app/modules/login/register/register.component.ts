@@ -43,8 +43,11 @@ export class RegisterComponent implements OnInit {
  
   this.login.register(this.user.value).subscribe(result => {
     this.signup = result;
-  })
+  });
+  alert("User Registration Successfull");
+  this.user.reset();
 }
 
 }
+
 

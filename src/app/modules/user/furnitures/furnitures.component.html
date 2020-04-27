@@ -1,2 +1,42 @@
 <app-navbar></app-navbar>
 <app-header></app-header>
+ <div class="container"  >
+  <div class="row" >
+  
+    <div class=" col-sm-6 col-md-3 " *ngFor ="let furniture of furnitures">
+      <div class="card" >
+        <p style="text-align: center;">{{furniture.productType}}</p>
+        <img class="card-img" src="{{furniture.picture}}" alt="Vans">
+      
+        <div class="card-block">
+      <span><h5 class="card-title" style="text-align: center;">{{furniture.productName}}</h5> </span> 
+      <h6 style="color: grey;text-align: center;">{{furniture.specification}}</h6>   
+          <p class="card-text">
+        
+          <div class="buy d-flex justify-content-between align-items-center">
+            <div class="price text-success"><h5 class="mt-4">₹{{furniture.price}}</h5></div>
+            <div class="qnty" >
+              <form class="form" [formGroup]="User">
+            <div class="form-group">
+          
+              <label class="control" for="Quantity">Quantity</label>
+              <div>
+              <input type="text"class="form-control" id="Quantity" formControlName="Quantity"
+            />
+           
+                
+              </div>
+            </div>
+              </form>
+          
+            <button class="btn btn-danger mt-3"   (click)="onAddToCart(furniture.productId)" > Add to Cart</button>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+      <br>
+      <br>
+    </div>
+  </div> 
+</div> 

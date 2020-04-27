@@ -1,0 +1,142 @@
+
+  
+  .table {
+    margin-top: 5%;
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+    margin-top: -37px;
+  }
+  .card {
+    margin-top: 42px;
+    margin-left: 289px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(15,21,78);
+    width: 689px;
+  }
+  
+  .card-title {
+    margin-left: -75%;
+    padding-top: 4%;
+    font-size: 31px;
+    font-weight: bold;
+  }
+  
+  .driverlist {
+    padding-top: 20%;
+  }
+  
+  .edit {
+    padding: 18px;
+  }
+  
+  .glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    padding-left: 22%;
+  }
+  
+  .glyphicon :hover {
+    background-color: peachpuff;
+    cursor: pointer;
+  }
+  
+  // .btn {
+  //   padding: 8px 16px;
+  
+  //   font-size: 14px;
+  //   font-weight: 400;
+  
+  //   text-align: center;
+  //   white-space: nowrap;
+  //   vertical-align: middle;
+  //   -ms-touch-action: manipulation;
+  //   touch-action: manipulation;
+  //   cursor: pointer;
+  //   -webkit-user-select: none;
+  //   -moz-user-select: none;
+  //   -ms-user-select: none;
+  //   user-select: none;
+  //   background-image: none;
+  //   border: 1px solid transparent;
+  //   border-radius: 4px;
+  //   margin-left: 12%;
+  //   position: absolute;
+  // }
+  
+  viewDrivers {
+    font-family: Bahnschrift;
+  }
+  .card {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 312px;
+    position: relative;
+    margin-top: 7%;
+    margin-left: 25%;
+    background-color: white;
+    width: 62%;
+    border-radius: 10px;
+  }
+  .modal-body {
+    background-color: red;
+    color: white;
+    width: 157%;
+    padding-bottom: 26%;
+    padding-right: 12%;
+    font-weight: bold;
+    font-size: 12pt;
+    text-align: center;
+    height: 4vh;
+    display: table-cell;
+    vertical-align: center;
+    border-radius: 5px;
+  }
+  
+  .a {
+    background-color: #79cc9a;
+    margin-left: -11%;
+    margin-right: 10px;
+    border-radius: 12px;
+    width: 16%;
+    height: 34%;
+    margin-top: -37%;
+    border: 1px solid #79cc9a;
+  }
+  .b {
+    background-color: #79cc9a;
+    margin-left: 22%;
+    margin-right: 10px;
+    border-radius: 12px;
+    width: 16%;
+    height: 34%;
+    margin-top: -37%;
+    border: 1px solid #79cc9a;
+  }
+  /////////////
+  .add {
+    height: 200px;
+    margin-top: 106px;
+    margin-left: 289px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e8e8e8;
+    width: 689px;
+  }
+  .add button {
+    position: absolute;
+    top: 138px;
+    left: 51vw;
+    height: 115px;
+    width: 100px;
+    border-radius: 9px;
+    background-color: #f0f0f0;
+  }

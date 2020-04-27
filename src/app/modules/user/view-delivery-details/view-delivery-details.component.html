@@ -1,0 +1,62 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+//////////
+<div class="add" *ngIf="isDetail === 'no'"><p>Please add your delivery details</p>
+  <div>
+    <button class="btn"  routerLink="/user/deliveryDetails">
+      <img
+        class="add-driver"
+        height="60cm"
+        width="60cm"
+      src="../../../../assets/add_details_icon.png"
+      /><br />
+      <h6>Add Details</h6>
+    </button>
+  </div>
+</div>
+/////////
+<div class="ViewDrivers" *ngIf="isDetail === 'yes'">
+  
+  <div class="card">
+    <div class="card-body">
+      <h1 class="card-title">Delivery Details</h1>
+      <table class="table table-bordered">
+        <thead>
+          <tr class="driverlist">
+          
+            <th scope="col">Name</th>
+            <th scope="col">ContactNo</th>
+            <th scope="col">DeliveryAddress</th>
+            <th scope="col">Pincode</th>
+            <th scope="col">Action</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr  let i = index>
+      
+            
+            <td>{{ datas.deliverTo}}</td>
+            <td>{{ datas.contactNo}}</td>
+            <td>{{ datas.deliveryAddress }}</td>
+            <td>{{ datas.pincode}}</td>
+
+            <td class="edit">
+              <a
+                [routerLink]="['/user/deliveryDetails',datas.id]"
+              >
+                <img src="assets/edit.png"
+                  height="25em"
+                  width="25em"
+                 
+                />
+              </a>
+
+             
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

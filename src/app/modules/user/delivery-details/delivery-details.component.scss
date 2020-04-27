@@ -1,0 +1,114 @@
+.button {
+    position: absolute;
+    top: 130px;
+    left: -18vw;
+    height: 115px;
+    width: 126px;
+    border-radius: 9px;
+    color: #f0f0f0;
+  }
+  
+//   h6 {
+//     color: black;
+//   }
+  
+  .card {
+    background-color: #e8e8e8;
+    width: 900px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 504px;
+    position: relative;
+    margin-top: 8%;
+
+    margin-left: 6%;
+    background-color: white;
+    border-radius: 10px;
+    left: 30vh;
+  }
+  .card-title {
+    font-size: 29px;
+    margin-left: 2%;
+    font-weight: bold;
+  }
+  .btn {
+    background-color: #62d999;
+    width: 117px;
+    font-size: 20px;
+    position: absolute;
+    left: 592px;
+    top: 13px;
+  }
+  
+  .form-group [type='text'] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding: 2px 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .form-group [type='password'] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding: 2px 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .form-control {
+    width: 124%;
+  }
+ 
+  
+//   .modal-body1 {
+//     background-color: #79cc9a;
+//     color: white;
+//     width: 157%;
+//     padding-bottom: 26%;
+//     padding-right: 12%;
+//     font-weight: bold;
+//     font-size: 12pt;
+//     text-align: center;
+//     height: 4vh;
+//     display: table-cell;
+//     vertical-align: center;
+//     border-radius: 5px;
+//   }
+//   .modal-body2 {
+//     background-color: #e77979;
+//     color: white;
+//     width: 157%;
+//     padding-bottom: 26%;
+//     padding-right: 12%;
+//     font-weight: bold;
+//     font-size: 12pt;
+//     text-align: center;
+//     height: 4vh;
+//     display: table-cell;
+//     vertical-align: center;
+//     border-radius: 5px;
+//   }
+//   .modal-body2 {
+//     background-color: rgb(212, 32, 32);
+  
+//     width: 157%;
+//     padding-bottom: 26%;
+//     padding-right: 12%;
+//     font-weight: bold;
+//     font-size: 12pt;
+//     text-align: center;
+//     height: 4vh;
+//     display: table-cell;
+//     vertical-align: center;
+//     border-radius: 5px;
+//   }
+  //-
+//   .ok {
+//     background-color: white;
+//     border-radius: 4px;
+//     width: 16%;
+//     border: 1px solid #79cc9a;
+//   }
+  

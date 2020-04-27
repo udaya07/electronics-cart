@@ -1,0 +1,148 @@
+<app-navbar></app-navbar>
+<app-header></app-header>
+<div class="card">
+    <div class="card-body">
+        <h1 class="card-title">Add Delivery Details</h1>
+        <form
+          class="form-horizontal"
+         
+          [formGroup]="user"
+        >
+      
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="Name">DeliverTo</label>
+            <div class="col-sm-9">
+              <input
+                type="text"
+                class="form-control"
+                id="Name"
+                formControlName="Name"
+              />
+              <div
+                *ngIf="
+                  user.controls['Name'].hasError('minlength') &&
+                  (user.controls['Name'].dirty ||
+                    user.controls['Name'].touched)
+                "
+                class="alert alert-danger"
+              >
+                Please Enter the Name(of atleast 4 characters)
+              </div>
+    
+              <div
+                *ngIf="user.controls['Name'].hasError('maxlength')"
+                class="alert alert-danger"
+              >
+                Name cannot exceed 10 characters
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="ContactNo"
+              >ContactNo</label
+            >
+            <div class="col-sm-9">
+              <input
+                onkeypress="return /[0-9]/i.test(event.key)"
+                type="text"
+                class="form-control"
+                id="text"
+                formControlName="ContactNo"
+              />
+              <div
+                *ngIf="
+                  user.controls['ContactNo'].hasError('minlength') &&
+                  (user.controls['ContactNo'].dirty ||
+                    user.controls['ContactNo'].touched)
+                "
+                class="alert alert-danger"
+              >
+                Please Enter the Contact No(of atleast 10 digits)
+              </div>
+              <div
+                *ngIf="user.controls['ContactNo'].hasError('maxlength')"
+                class="alert alert-danger"
+              >
+                Contact No Cannot exceed 15 Numbers
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="DeliveryAddress">Address</label>
+            <div class="col-sm-9">
+              <input
+                onkeypress="return /[a-z,A-Z,0-9,@ ]/i.test(event.key)"
+                type="text"
+                class="form-control"
+                id="DeliveryAddress"
+                formControlName="DeliveryAddress"
+              />
+              <div
+                *ngIf="
+                  user.controls['DeliveryAddress'].hasError('minlength') &&
+                  (user.controls['DeliveryAddress'].dirty ||
+                    user.controls['DeliveryAddress'].touched)
+                "
+                class="alert alert-danger"
+              >
+                please enter an Address(atleast 4 characters)
+              </div>
+    
+              <div
+                *ngIf="user.controls['DeliveryAddress'].hasError('maxlength')"
+                class="alert alert-danger"
+              >
+                
+              </div>
+            </div>
+          </div>
+         
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="text">Pincode</label>
+            <div class="col-sm-9">
+              <input
+                type="Pincode"
+                class="form-control"
+                id="Pincode"
+                formControlName="Pincode"
+              />
+              <div
+                *ngIf="
+                  user.controls['Pincode'].hasError('minlength') &&
+                  (user.controls['Pincode'].dirty ||
+                    user.controls['Pincode'].touched)
+                "
+                class="alert alert-danger"
+              >
+                Please Enter a Pincode(of atleast 4 characters)
+              </div>
+              <div
+                *ngIf="user.controls['Pincode'].hasError('maxlength')"
+                class="alert alert-danger"
+              >
+                Pincode cannot exceed 10 characters
+              </div>
+            </div>
+          </div>
+    
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10"></div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button
+             
+                class="btn"
+                [disabled]="!user.valid"
+                (click)="onPost()"
+              >
+                Submit
+              </button>
+            
+            </div>
+           
+           
+          </div>
+        </form>
+      </div>
+    </div>

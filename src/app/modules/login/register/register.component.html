@@ -3,7 +3,7 @@
     <h1 class="card-title">Sign up</h1>
     <form
       class="form-horizontal"
-      (ngSubmit)="onSubmit()"
+     
       [formGroup]="user"
     >
     <button
@@ -75,7 +75,7 @@
         <label class="control-label col-sm-2" for="email">EmailId</label>
         <div class="col-sm-9">
           <input
-            onkeypress="return /[a-z ]/i.test(event.key)"
+            onkeypress="return /[a-z,A-Z,0-9,@ ]/i.test(event.key)"
             type="text"
             class="form-control"
             id="EmailId"
@@ -135,7 +135,7 @@
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
           <button
-            type="submit"
+           
             class="btn"
             [disabled]="!user.valid"
             (click)="onSubmit()"

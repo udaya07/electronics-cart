@@ -9,10 +9,10 @@
     font-family:  inherit;
     text-align: center;
 }
-span h3{
+span h5{
     position: absolute;
-    left: -880px;
-    top: -20px;
+    left: -980px;
+    top: -10px;
 }
 span{
     cursor: pointer;
@@ -23,9 +23,25 @@ span{
     left: 1000px;
 }
 .cart{
+
     position: absolute;
     left: -31px;
     height: 23px;
     width: 29px;
     top: -2px;
+}
+.username{
+    position: absolute;
+    left: 818px;
+    top: 24px;
+    color: #fbff00d4;
+    font-size: 20px;
+}
+button{
+    background-color: red;
+    color: whitesmoke;
+    position: absolute;
+    left: 1181px;
+    top: 19px;
+
 }

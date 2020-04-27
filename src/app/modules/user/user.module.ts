@@ -9,11 +9,13 @@ import { CartComponent } from './cart/cart.component';
 import { AboutComponent } from './about/about.component';
 import { ElectronicsComponent } from './electronics/electronics.component';
 import { FurnituresComponent } from './furnitures/furnitures.component';
+import { DeliveryDetailsComponent } from './delivery-details/delivery-details.component';
+import { ViewDeliveryDetailsComponent } from './view-delivery-details/view-delivery-details.component';
 
 
 
 @NgModule({
-  declarations: [DashboardComponent, YourOrdersComponent, NavbarComponent, WishlistComponent, HeaderComponent, CartComponent, AboutComponent, ElectronicsComponent, FurnituresComponent],
+  declarations: [DashboardComponent, YourOrdersComponent, NavbarComponent, WishlistComponent, HeaderComponent, CartComponent, AboutComponent, ElectronicsComponent, FurnituresComponent, DeliveryDetailsComponent, ViewDeliveryDetailsComponent],
   imports: [
     CommonModule,
     

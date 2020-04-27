@@ -47,7 +47,7 @@ export class LoginComponent implements OnInit {
         console.log(this.decodedToken);
         this.decodedToken.jwtToken = token.token;
         sessionStorage.setItem('user', JSON.stringify(this.decodedToken));
-        this.router.navigate(['user/dashboard'], );
+        this.router.navigate(['user/viewDeliveryDetails'], );
     },
     err => {
       console.log(err);

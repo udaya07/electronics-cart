@@ -13,15 +13,17 @@
   }
   
   .card {
-    background-color: #e8e8e8;
-    width: 675px;
+    background-color: rgb(63,95,156);
+    color: white;
+    width: 900px;
     overflow-y: auto;
     overflow-x: hidden;
     height: 504px;
     position: relative;
     margin-top: 8%;
-    margin-left: 20%;
-    background-color: white;
+
+    margin-left: 6%;
+   
     border-radius: 10px;
     left: 30vh;
   }
@@ -31,14 +33,17 @@
     font-weight: bold;
   }
   .btn {
-    background-color: rgb(98, 217, 153);
+    background-color: rgb(40,167,69);
     width: 100px;
     font-size: 20px;
-    margin-left: 489px;
+    position: absolute;
+    left: 771px;
+    top: 10px;
   }
   
   .form-group [type='text'] {
     background: transparent;
+    color: white;
     border: none;
     border-bottom: 1px solid #000000;
     padding: 2px 5px;
